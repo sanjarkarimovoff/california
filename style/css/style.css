@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.con1 {
+  width: 1440;
+  height: 80;
+}
+.con1 .logo {
+  width: 170px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  left: 5%;
+}
+.con1 .logo P {
+  font-size: 26px;
+  font-weight: 900;
+  font-family: "Bodoni Moda";
+  text-transform: uppercase;
+}
+.con1 .nav {
+  width: 500px;
+  height: 20px;
+  position: relative;
+  left: 35%;
+}
+.con1 .nav .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_hide {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
