@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 .con1{
-    width: 1440;
-    height: 80;
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
     .logo{
         width: 170px;
         height: 20px;
@@ -24,18 +34,30 @@
      .nav {
         width: 500px;
         height: 20px;
-        position: relative;
         left: 35%;
         .item{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            &_a{
+                font-family: 'Inter';
+                font-weight: 500;
+                text-transform: uppercase;  
+                color: #000000;
+            }
         }
      }
 }
 
 .item_hide{
-    display: flex;
-    overflow: hidden;
+    display: none;
+    position: absolute;
+}
+.item_a2:hover{
+    color: #425FD0;
+
+}
+.item_a1:hover .item_hide{
+    display: block;
     position: absolute;
 }
