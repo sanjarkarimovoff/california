@@ -1,3 +1,5 @@
+@import "1cont";
+ 
  * {
     margin: 0;
     padding: 0;
@@ -44,6 +46,29 @@ a{
                 font-weight: 500;
                 text-transform: uppercase;  
                 color: #000000;
+                transition: 250ms;
+                &:hover{
+                    color: #19b7cc;
+                }
+            }
+            &_a1{
+                ion-icon{
+                    position: relative;
+                    top: 2.5px;
+                }
+            }
+        }   
+     }
+     .left{
+        width: 250px;
+        height: 30px;
+        &_i{
+            color: #000;
+            font-size: 25px;
+            margin: 0 15px 0 0;
+            transition: 250ms;
+            &:hover{
+                color: #00d9ff;
             }
         }
      }
@@ -51,13 +76,16 @@ a{
 
 .item_hide{
     display: none;
-    position: absolute;
 }
 .item_a2:hover{
     color: #425FD0;
 
 }
-.item_a1:hover .item_hide{
-    display: block;
-    position: absolute;
+.item_a2:hover .item_hide{
+    display: inline-block;
+}
+.item_hide{
+    width: 60px;
+    height: 50px;
+    background-color: red;
 }
